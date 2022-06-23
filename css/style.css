@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+#hamburger{
+    position: fixed;
+    margin: 28px 20px;
+    cursor: pointer;
+    z-index: 12;
+}
+
+#hamburger img{
+    width: 17px;
+}
+
+#hamburger:hover{
+    filter: invert(15%);
+}
+
+#close{
+    position: absolute;
+    right: 28px;
+
+}
+#close:hover{
+    filter: invert(15%);
+
+}
+
+#navbar{
+    display: none;
+    position: fixed;
+    align-items: center;
+    top: 0px;
+    z-index: 10;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100vw;
+    /* font-size: 0.5rem; */
+}
+
+#navbar::before{
+    content: "";
+    background: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+#logo{
+    margin: 20px 60px;
+    font-size: 1.5rem;
+    cursor:pointer;
+}
+
+#logo1{
+    color: rgb(240, 23, 23);
+}
+
+#logo2{
+    color: white;
+
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 300;
+
+
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+    font-size: 1.0rem;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+#navbar ul li a:hover{
+    color: rgb(182, 182, 182);
+    
+}
+
+#header::before{
+    content: "";
+    background: url("../img/background.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    /* opacity: 0.9; */
+}
+
+#header{
+    justify-content: center; 
+    height: 750px;
+    background-color: rgba(85, 85, 85, 0.247);
+    /* border: 2px solid red; */
+
+}
+
+#headersec{
+    /* border: 2px solid red; */
+    padding: 150px 0px;
+   
+}
+
+#header img{
+    width: 80px;
+    display: block;
+    margin: auto;
+    filter: invert(100%);
+    cursor: pointer;
+
+}
+#header img:hover{
+    filter: invert(87%);
+}
+
+#header h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    width: 48%;
+    margin: auto;
+    margin-top: 20px;
+
+    /* display: block; */
+}
+
+#header p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.button{
+    border: 0.5px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+}
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.123);
+}
+#buttoncontainer{
+    margin: 20px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 40px;
+    
+    /* display: block; */
+    /* display: inline-block; */
+    /* width: 100%; */
+}
+#headerbutton{
+     background-color: #fc3131; 
+     border-color: transparent;
+     color: #f2f6fa;
+}
+
+#headerbutton:hover{
+    background-color: rgba(255, 255, 255, 0.295);
+    
+}
+
+#firstsec{
+    margin: auto;
+    padding: 45px 70px;
+    /* border: 2px solid green; */
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: 50% 50%;
+    background-color: #fff;
+    color: #555;
+}
+
+#firstleft{
+    padding: 20px 10px;
+    /* border: 2px solid blue; */
+    
+
+}
+#firstleft h1{
+    font-size: 36px;
+    font-weight: 300;
+    
+}
+
+#firstleft h1::after{
+    content: "";
+    border-top: 0.5px solid #555;
+    display: block;
+    margin-top: 20px;
+    width: 30%;
+}
+
+#firstleft p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    
+}
+#firstright img{
+    width: 400px;
+    display: inline-block;
+    /* border: 2px solid blue; */
+    /* margin: 0px 90px;
+    margin-top: 58px;*/
+    border-radius: 4px;
+
+
+}
+#firstright{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+#secondsec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+    background-color: rgba(85, 85, 85, 0.39);
+
+    /* border: 2px solid red; */
+
+}
+/* #secondsec::before{
+    content: "";
+    background: #555;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+} */
+
+#secondleft{
+    /* border: 2px solid blue; */
+    padding: 90px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#secondleft ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 95px;
+    justify-content: center;
+    align-items: center;
+}
+/* #secondleft ul li{
+    
+} */
+#secondleft ul li img{
+    filter: invert(100%);
+    width: 100px;
+    cursor: pointer;
+
+}
+
+#secondleft ul li img:hover{
+    filter: invert(80%);
+}
+/* .square::before{
+    content: "";
+    border: 1px solid #fff;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    position: relative;
+} */
+
+#secondright{
+    /* border: 2px solid blue; */
+    padding: 100px 100px;
+}
+#secondright h1{
+    /* margin: 10px 20px; */
+    font-weight: 400px;
+    font-size: 2rem;
+    /* line-height: ; */
+
+}
+#secondright h1::after{
+    content: "";
+    border-top: 1px solid rgb(255, 252, 252);
+    display: block;
+    /* margin: auto; */
+    margin-top: 36px;
+    width: 30%;
+}
+
+#secondright p{
+    /* margin: 10px 20px; */
+    margin-top: 45px;
+    /* font-size: 1.5rem; */
+    font-weight: 300px;
+}
+
+#thirdsec{
+    background: #fff;
+    /* border: 2px solid red; */
+    color: #555;
+    padding: 110px 4px;
+}
+#thirdcont > h1{
+    text-align: center;
+
+}
+#thirdcont > p{
+    text-align: center;
+    margin-top: 10px;
+    
+
+}
+
+#thirdcont > h1::after{
+    content: "";
+    border-top: 0.5px solid rgb(193, 193, 193);
+    display: block;
+    margin: auto;
+    margin-top: 36px;
+    width: 20%;
+   
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4px ;
+    margin-top: 20px;
+    
+}
+.card{
+    /* border: 2px solid red; */
+    padding: 20px 2px;
+
+}
+.card h1{
+    text-align: center;
+}
+
+.card p{
+    text-align: center;
+    line-height: 30px;
+}
+.card img{
+    width: 75%;
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+    margin: 25px auto;
+}
+.card a{
+    color: #555;
+    border-color: #555;
+    margin: auto;
+    display: block;
+    margin: 30px auto;
+    width: 8%;
+    
+}
+.card a:hover{
+    background-color: rgba(85, 85, 85, 0.178);
+
+}
+
+#fourthsec{
+    padding: 125px 15px;
+    background-color: rgba(85, 85, 85, 0.39);
+    /* border: 2px solid red; */
+
+}
+
+/* #fourthcont{
+    border: 2px solid blue;
+
+} */
+#fourthcont h1{
+    text-align: center;
+}
+#fourthcont h1::after{
+    content: "";
+    border-top: 1px solid rgb(255, 252, 252);
+    display: block;
+    margin: auto;
+    margin-top: 36px;
+    width: 10%;
+}
+#fourthcont p{
+    text-align: center;
+}
+#fourthbuttoncard{
+    /* display: block;
+    margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+#fourthbuttoncard a{
+    margin: 0px 10px;
+}
+
+#unique{
+    background-color: rgb(236, 59, 59);
+    color: rgb(245, 240, 240);
+    border-color: transparent;
+}
+#unique:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+    color: #fff;
+} 
+
+#footer{
+    padding: 150px 10px;
+    /* border: 2px solid red; */
+    background-color: #0061cf;
+    background-image: 
+        linear-gradient(
+            to right, 
+            #57f1df,
+            #00c4f5 15%,
+            #06aac0 45%,
+            #20adff 65%,
+            #339bd8 75%,
+            #1774ff 95%
+            );
+}
+
+#iconcontainer{
+    /* margin: auto; */
+    /* display: block; */
+    /* border: 2px solid blue; */
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#iconcontainer img{
+    width: 40px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+#foot{
+    text-align: center;
+    padding: 15px 2px;
+}
+#iconcontainer img{
+    filter: invert(100%);
+}
+
+#iconcontainer img:hover{
+    filter: invert(80%)
+}

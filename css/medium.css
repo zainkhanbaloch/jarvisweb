@@ -1,0 +1,33 @@
+#firstsec{
+    display: grid;
+    padding: 45px 102px;
+    /* width: 510px; */
+    /* margin-right: 0px; */
+    grid-template-columns: none;
+
+}
+
+#firstright img{
+    width: 500px;
+
+}
+
+#firstleft h1, #firstleft p{
+    text-align: center;
+}
+#firstleft h1::after{
+    margin: auto;
+    margin-top: 40px;
+
+}
+#secondsec{
+    grid-template-columns: 1fr 2fr;
+
+}
+#secondleft{
+    padding: 100px 50px;
+}
+#secondright{
+    padding: 100px 20px;
+
+}

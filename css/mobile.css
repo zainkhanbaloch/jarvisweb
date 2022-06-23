@@ -1,0 +1,110 @@
+*{
+  font-size: 13px;  
+
+}
+#navbar{
+    flex-direction: column;
+}
+
+#navbar::before{
+    height: 85px;
+}
+
+#logo{
+    margin: 8px 60px;
+
+}
+
+#header{
+    background-image: url("../img/background.jpg");
+}
+#header::before{
+    content: none;
+    /* background: red repeat center center/cover; */
+    background: none;
+    width: none;
+    height: none;
+    z-index: -1;
+    /* position: ; */
+    top: 0px;
+    right: 0px;
+    
+}
+#header h1, #header p{
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+}
+#firstsec{
+    grid-template-columns: none;
+    padding: 30px 30px ;
+
+}
+#secondsec{
+    display: grid;
+    grid-template-columns:none;
+  
+
+    /* border: 2px solid red; */
+
+}
+.grid{
+    grid-template-columns: none;
+}
+
+#firstright img{
+    width: 70%;
+
+}
+#firstleft h1, #firstleft p, #header h1, #header p{
+    font-size: 16px;
+    text-align: center;
+}
+#firstleft h1::after{
+    margin: auto;
+    margin-top: 40px;
+}
+
+#secondleft ul li img{
+    width: 50px ;
+}
+#secondleft ul{
+    grid-gap: 50px;
+    padding: 10px 10px;
+    grid-template-columns: repeat(3, auto);
+}
+#secondleft{
+    padding: 40px 40px;
+    /* margin: auto; */
+    /* width: 90vw; */
+}
+#secondright{
+    padding: 30px 30px;
+}
+#secondright h1, #secondright p{
+    text-align: center;
+
+}
+#secondright h1::after{
+    margin: auto;
+    margin-top: 20px;
+}
+/* #iconcontainer{
+    width: 70vw;
+} */
+#second{
+    background-image: url("../img/background.jpg");
+
+}
+#fourthsec{
+    background-image: url("../img/background.jpg");
+
+}
+#iconcontainer img{
+    width: 20px;
+}
+
+#footer{
+    /* height: 100px; */
+    padding: 50px 30px;
+}
