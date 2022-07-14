@@ -18,10 +18,12 @@ body{
 
 #hamburger img{
     width: 17px;
+    filter: invert(15%);
+    
 }
 
 #hamburger:hover{
-    filter: invert(15%);
+    filter: invert(30%);
 }
 
 #close{
