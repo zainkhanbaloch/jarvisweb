@@ -16,20 +16,18 @@
 }
 
 #header{
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.jpg") no-repeat center center/cover;
 }
-#header::before{
+/* #header::before{
     content: none;
-    /* background: red repeat center center/cover; */
     background: none;
     width: none;
     height: none;
     z-index: -1;
-    /* position: ; */
     top: 0px;
     right: 0px;
     
-}
+} */
 #header h1, #header p{
     margin: auto;
     margin-top: 20px;
