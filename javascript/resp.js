@@ -7,7 +7,7 @@ hamburg.addEventListener("click", function run(){
         navbar.style.display = "none"
         
     }
-    else{
+    else if (navbar.style.display = "none"){
         navbar.style.display = "flex"
     }
     // alert("You clicked logo")
