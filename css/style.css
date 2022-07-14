@@ -99,7 +99,7 @@ body{
 
 #header::before{
     content: "";
-    background: url("../img/background.jpg") no-repeat center center/cover;
+    background: url("https://www.allsightsafrica.org/wp-content/uploads/2020/09/pexels-3.png") no-repeat center center/cover;
     width: 100%;
     height: 100vh;
     z-index: -1;
